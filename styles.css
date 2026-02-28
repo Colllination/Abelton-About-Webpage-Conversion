@@ -3,29 +3,11 @@ a {
     color: black;
 }
 
-.primary-navs {
-    font-size: 14px;
-    font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
+.nav {
     display: flex;
-    list-style-type: none;
-    font-weight: bold;
-    gap: 38px;
-    float: left;
-    margin-right: 40px;
-    margin-top: 20px;
-    
-}
-
-.secondary-navs {
-    font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
-    display: flex;
-    list-style-type: none;
-    font-weight: bold;
-    gap: 25px;
-    float: right;
-    margin-right: 40px;
-    margin-top: 20px;
-    
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
 }
 
 .logo {
@@ -34,4 +16,26 @@ a {
     margin-right: 8px;
     float: left;
     margin-left: 30px;
+}
+.primary-navs {
+    font-size: 14px;
+    font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
+    float: left;
+    list-style-type: none;
+    font-weight: bold;
+    gap: 25px;
+    margin-right: 40px;
+    margin-top: 20px;
+    
+}
+
+.secondary-navs {
+    font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
+    list-style-type: none;
+    font-weight: bold;
+    gap: 25px;
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+    
 }
