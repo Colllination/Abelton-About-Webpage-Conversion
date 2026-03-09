@@ -1,13 +1,20 @@
-a {
-    text-decoration: none;
-    color: black;
+:root {
+    --hover-color: #e1c5b1;
+    --more: #d4722c;
+    --tryfree: #0f27ff;
+    --background-color: #f9f9f9;
+    --links-color: #000000;
+    --purple-color: #e0adff;
 }
+
+
+
 
 .nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 5px 10px;
     gap: 20px;
     border-bottom: 2px solid rgb(225, 225, 225);
 }
@@ -35,6 +42,18 @@ a {
   font-weight: bold;
   font-size: 14px;
 }
+
+.primary-navs a,
+.secondary-navs a {
+    color: var(--links-color);
+    transition: color 0.3s ease;
+    text-decoration: none;
+ }
+
+ .primary-navs a:hover,
+.secondary-navs a:hover {
+    color: var(--hover-color);
+}
     
 
 .primary-navs {
@@ -48,4 +67,50 @@ a {
  }
 
 
- 
+.primary-navs a.try-free,
+.secondary-navs a.try-free {
+  color: var(--tryfree);
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.primary-navs a.try-free :hover,
+.secondary-navs a.try-free :hover {
+  color: var(--hover-color);
+  transition: color 0.3s ease;
+}
+
+
+
+.primary-navs a.more,
+.secondary-navs a.more {
+  color: var(--more);
+  font-size: 16px;
+}
+
+
+
+.purple-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple-color);
+    gap: 160px;
+    padding: 120px;
+    max-width: 650px;
+    max-height: 500px;
+    margin: auto;
+}
+
+
+.first-image {
+    width: 450px;
+    margin: 20px 0;
+}
+
+.second-image {
+    width: 550px;
+    margin: 20px 0;
+}
+
+
