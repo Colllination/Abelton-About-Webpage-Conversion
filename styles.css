@@ -12,9 +12,21 @@
   box-sizing: border-box;
 }
 
+section {
+  padding: 100px 40px;
+}
+
+
+
 img {
   max-width: 100%;
   display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 body {
@@ -99,6 +111,10 @@ body {
   font-size: 16px;
 }
 
+
+
+
+
 .abelton-image {
   position: relative;
   height: 100%;
@@ -125,6 +141,7 @@ body {
   font-size: 110px;
   font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
 }
+ 
 
 
 .first-text-section {
@@ -133,6 +150,7 @@ body {
   text-align: center;
   padding: 0 20px;
 }
+
 
 .main-text {
   font-size: 27px;
@@ -158,6 +176,10 @@ body {
   color: #3e3b3b;
 }
 
+.first-text-section {
+  margin: 0, auto;
+  max-width: 800px;
+}
 
 
 .yellow-box-section {
@@ -267,6 +289,7 @@ body {
   border: none;
 }
 
+
 .video-description {
   margin-top: 12px;
   font-size: 15px;
@@ -341,6 +364,14 @@ body {
   transform: translateX(60px);
   margin-top: 60px;
 }
+  
+
+  .img-big {
+    grid-column: 1;
+    grid-row: 1;
+    transform: translateX(0);
+    margin-top: 0;
+  }
 
 
 
@@ -519,7 +550,29 @@ body {
   margin-left: 60px;
 }
 
+@media (max-width: 768px) {
+  .jobs-container {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
 
+  .blue-text-box {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .blue-text-box p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: none;
+  }
+
+  .blue-text-box a {
+    margin-left: 0;
+    align-self: center;
+  }
+}
 
 .footer {
   background: var(--background-color);
@@ -670,3 +723,87 @@ p {
   margin-bottom: 15px;
   line-height: 30px;
 }
+
+
+
+ 
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 20px;
+  }
+
+ .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+   .green-img-grid {
+    grid-template-columns: 1fr;
+  }
+  .green-img-grid img {
+    position: static;
+  }
+
+    .first-text-section {
+    padding: 0 20px;
+  }
+
+  .sub-text {
+    font-size: 16px;
+    padding: 0 20px;
+  }
+  
+  .video-wrapper {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+  
+  .video-description {
+    font-size: 16px;
+  }
+
+  .yellow-box {
+    grid-template-columns: 1fr;
+  }
+
+ .abelton-image h1 {
+    font-size: 32px;
+    padding: 0 20px;
+  }
+
+  
+  .nav-container {
+    display: none;
+  }
+
+  .primary-navs,
+  .secondary-navs {
+    gap: 15px;
+    font-size: 12px;
+  }
+
+}
+
+
+
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .yellow-box {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 80px 20px;
+  }
+
+  .purple-box {
+    flex-direction: column;
+    gap: 30px;
+    padding: 60px 20px;
+  }
+}
+
