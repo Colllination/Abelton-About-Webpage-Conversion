@@ -51,6 +51,13 @@ body {
   border-bottom: 2px solid rgb(225, 225, 225);
 }
 
+.nav-left {
+display: flex;
+align-items: center;
+gap: 25px;
+}
+
+
 
 .logo {
   width: 60px;
@@ -92,10 +99,6 @@ body {
   margin-right: auto
 }
 
-.secondary-navs {
-  margin-left: auto;
-
-}
 
 
 .primary-navs a.try-free,
@@ -117,6 +120,61 @@ body {
   color: var(--more);
   font-size: 16px;
 }
+
+
+.more-wrapper {
+  position: relative;
+  display: block;
+  z-index: 5000;
+}
+
+.more-btn {
+  background: none;
+  border: none;
+  color: var(--more);
+  font: inherit;
+  cursor: pointer;
+  font-family: "Futura PT", "Futura", "Trebuchet MS", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.more-dropdown {
+  display: none;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 700px;
+  background: var(--background-color);
+  padding: 35px 40px;
+  box-shadow: 0 15px 30px rgba(0,0,0,.08);
+  border-top: 1px solid #eee;
+  z-index: 5000;
+}
+
+.more-dropdown.show {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 35px;
+}
+
+.more-dropdown h4 {
+  margin: 0 0 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.more-dropdown a {
+  display: block;
+  padding: 7px 0;
+  text-decoration: none;
+  color: var(--links-color);
+  font-size: 14px;
+}
+
+.more-dropdown a:hover {
+color: var(--more);
+}
+
 
 
 .sub-nav {
